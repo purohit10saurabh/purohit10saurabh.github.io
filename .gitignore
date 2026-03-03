@@ -1,0 +1,4 @@
+serve.sh
+_site/
+.jekyll-cache/
+.jekyll-metadata
