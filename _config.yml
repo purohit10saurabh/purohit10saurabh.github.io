@@ -1,0 +1,21 @@
+title: Saurabh Purohit
+description: Technical writing, math, and life.
+url: "https://purohit10saurabh.github.io"
+baseurl: ""
+
+theme: minima
+
+header_pages:
+  - blog.md
+  - life.md
+
+markdown: kramdown
+kramdown:
+  math_engine: null
+
+show_excerpts: true
+excerpt_separator: "<!--more-->"
+
+minima:
+  social_links:
+    - { platform: github, user_url: "https://github.com/purohit10saurabh" }
