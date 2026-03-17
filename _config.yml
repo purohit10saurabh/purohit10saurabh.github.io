@@ -1,4 +1,4 @@
-title: Saurabh Purohit
+title: Saurabh Purohit blog
 description: About me
 url: "https://purohit10saurabh.github.io"
 baseurl: ""
@@ -6,7 +6,7 @@ baseurl: ""
 theme: minima
 
 header_pages:
-  - blog.md
+  - index.md
   - life.md
 
 markdown: kramdown
@@ -19,6 +19,5 @@ excerpt_separator: "<!--more-->"
 sass:
   quiet_deps: true
 
-minima:
-  social_links:
-    - { platform: github, user_url: "https://github.com/purohit10saurabh" }
+github_username: purohit10saurabh
+twitter_username: purohit10saurab

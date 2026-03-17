@@ -1,7 +1,7 @@
 ---
 layout: post-list
 title: Blog
-permalink: /blog/
+permalink: /
 category: blog
 description: Technical writing on math, systems, and ideas.
 ---
