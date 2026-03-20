@@ -1,4 +1,24 @@
 ---
 ---
 
+$background-color: #1a1b2e;
+$text-color: #d4d4dc;
+$brand-color: #7aa2f7;
+$grey-color: #6b7089;
+$grey-color-light: #2a2b3d;
+$grey-color-dark: #9499b7;
+
 @import "minima";
+
+.katex { color: $text-color; }
+
+img[src$=".svg"] { filter: invert(1) hue-rotate(180deg); }
+
+code, pre { background-color: $grey-color-light; color: $text-color; }
+
+details {
+  background-color: $grey-color-light;
+  padding: 0.75em 1em;
+  border-radius: 4px;
+  summary { color: $brand-color; cursor: pointer; }
+}
