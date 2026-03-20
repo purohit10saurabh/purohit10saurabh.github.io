@@ -3,5 +3,5 @@ layout: post-list
 title: Life
 permalink: /life/
 category: life
-description: Personal reflections and stories.
+description: Travel, books, and other things that interest me.
 ---
