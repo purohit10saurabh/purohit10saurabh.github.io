@@ -3,6 +3,8 @@ description: About me
 url: "https://purohit10saurabh.github.io"
 baseurl: ""
 
+permalink: /:title/
+
 theme: minima
 
 header_pages:

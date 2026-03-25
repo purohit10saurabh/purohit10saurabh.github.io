@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg viewBox="0 0 420 320" width="420" height="320" xmlns="http://www.w3.org/2000/svg">
+<svg viewBox="0 0 420 330" width="420" height="330" xmlns="http://www.w3.org/2000/svg">
 <line x1="70" y1="239.3" x2="395" y2="239.3" stroke="#dee2e6" stroke-width="0.5" stroke-dasharray="4,3"/>
 <line x1="70" y1="203.6" x2="395" y2="203.6" stroke="#dee2e6" stroke-width="0.5" stroke-dasharray="4,3"/>
 <line x1="70" y1="167.9" x2="395" y2="167.9" stroke="#dee2e6" stroke-width="0.5" stroke-dasharray="4,3"/>
@@ -13,37 +13,37 @@
 <line x1="70" y1="275" x2="395" y2="275" stroke="#2c3e50" stroke-width="1.5"/>
 <line x1="70" y1="25" x2="70" y2="275" stroke="#2c3e50" stroke-width="1.5"/>
 <line x1="70" y1="275" x2="70" y2="280" stroke="#2c3e50" stroke-width="1"/>
-<text x="70" y="295" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="middle">0</text>
+<text x="70" y="295" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="middle">0</text>
 <line x1="135" y1="275" x2="135" y2="280" stroke="#2c3e50" stroke-width="1"/>
-<text x="135" y="295" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="middle">0.2</text>
+<text x="135" y="295" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="middle">0.2</text>
 <line x1="200" y1="275" x2="200" y2="280" stroke="#2c3e50" stroke-width="1"/>
-<text x="200" y="295" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="middle">0.4</text>
+<text x="200" y="295" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="middle">0.4</text>
 <line x1="265" y1="275" x2="265" y2="280" stroke="#2c3e50" stroke-width="1"/>
-<text x="265" y="295" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="middle">0.6</text>
+<text x="265" y="295" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="middle">0.6</text>
 <line x1="330" y1="275" x2="330" y2="280" stroke="#2c3e50" stroke-width="1"/>
-<text x="330" y="295" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="middle">0.8</text>
+<text x="330" y="295" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="middle">0.8</text>
 <line x1="395" y1="275" x2="395" y2="280" stroke="#2c3e50" stroke-width="1"/>
-<text x="395" y="295" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="middle">1</text>
-<text x="60" y="279" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">0</text>
+<text x="395" y="295" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="middle">1</text>
+<text x="60" y="279" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">0</text>
 <line x1="65" y1="239.3" x2="70" y2="239.3" stroke="#2c3e50" stroke-width="1"/>
-<text x="60" y="243" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">1</text>
+<text x="60" y="243" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">1</text>
 <line x1="65" y1="203.6" x2="70" y2="203.6" stroke="#2c3e50" stroke-width="1"/>
-<text x="60" y="207" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">2</text>
+<text x="60" y="207" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">2</text>
 <line x1="65" y1="167.9" x2="70" y2="167.9" stroke="#2c3e50" stroke-width="1"/>
-<text x="60" y="172" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">3</text>
+<text x="60" y="172" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">3</text>
 <line x1="65" y1="132.1" x2="70" y2="132.1" stroke="#2c3e50" stroke-width="1"/>
-<text x="60" y="136" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">4</text>
+<text x="60" y="136" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">4</text>
 <line x1="65" y1="96.4" x2="70" y2="96.4" stroke="#2c3e50" stroke-width="1"/>
-<text x="60" y="100" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">5</text>
+<text x="60" y="100" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">5</text>
 <line x1="65" y1="60.7" x2="70" y2="60.7" stroke="#2c3e50" stroke-width="1"/>
-<text x="60" y="65" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">6</text>
+<text x="60" y="65" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">6</text>
 <line x1="65" y1="25" x2="70" y2="25" stroke="#2c3e50" stroke-width="1"/>
-<text x="60" y="29" font-size="12" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">7</text>
+<text x="60" y="29" font-size="15" fill="#2c3e50" font-family="Georgia,serif" text-anchor="end">7</text>
 
 <path d="M70.0,203.6 L76.5,203.5 L83.0,203.1 L89.5,202.6 L96.0,201.8 L102.5,200.8 L109.0,199.6 L115.5,198.2 L122.0,196.6 L128.5,194.8 L135.0,192.9 L141.5,190.9 L148.0,188.7 L154.5,186.3 L161.0,183.9 L167.5,181.3 L174.0,178.7 L180.5,175.9 L187.0,173.1 L193.5,170.1 L200.0,167.1 L206.5,164.1 L213.0,161.0 L219.5,157.8 L226.0,154.6 L232.5,151.3 L239.0,148.0 L245.5,144.6 L252.0,141.2 L258.5,137.8 L265.0,134.3 L271.5,130.8 L278.0,127.3 L284.5,123.7 L291.0,120.2 L297.5,116.6 L304.0,112.9 L310.5,109.3 L317.0,105.7 L323.5,102.0 L330.0,98.3 L336.5,94.6 L343.0,90.9 L349.5,87.1 L356.0,83.4 L362.5,79.6 L369.0,75.9 L375.5,72.1 L382.0,68.3 L388.5,64.5 L395.0,60.7" fill="none" stroke="#e74c3c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 <circle cx="70" cy="203.6" r="3" fill="#e74c3c"/>
 <circle cx="395" cy="60.7" r="3" fill="#e74c3c"/>
-<text x="390" y="40" font-size="13" fill="#2c3e50" font-family="Georgia,serif" font-style="italic" text-anchor="end">In 9 dimensions</text>
-<text x="232" y="312" font-size="13" fill="#2c3e50" font-family="Georgia,serif" font-style="italic" text-anchor="middle">t</text>
-<text x="18" y="150" font-size="13" fill="#2c3e50" font-family="Georgia,serif" font-style="italic" text-anchor="middle" transform="rotate(-90 18 150)">Distance of point on cube from origin</text>
+<text x="390" y="40" font-size="16" fill="#2c3e50" font-family="Georgia,serif" font-style="italic" text-anchor="end">In 9 dimensions</text>
+<text x="232" y="312" font-size="16" fill="#2c3e50" font-family="Georgia,serif" font-style="italic" text-anchor="middle">t</text>
+<text x="18" y="150" font-size="16" fill="#2c3e50" font-family="Georgia,serif" font-style="italic" text-anchor="middle" transform="rotate(-90 18 150)">Distance of the point on cube from origin</text>
 </svg>
