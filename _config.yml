@@ -1,4 +1,4 @@
-title: Saurabh Purohit blog
+title: Saurabh Purohit
 description: About me
 url: "https://purohit10saurabh.github.io"
 baseurl: ""
@@ -6,10 +6,6 @@ baseurl: ""
 permalink: /:title/
 
 theme: minima
-
-header_pages:
-  - index.md
-  - life.md
 
 markdown: kramdown
 kramdown:

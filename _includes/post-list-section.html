@@ -1,0 +1,21 @@
+{%- assign category_posts = site.posts | where: "category", include.category -%}
+<section class="section">
+  <h2>{{ include.title }}</h2>
+  {%- if include.description %}
+  <p class="section-desc">{{ include.description }}</p>
+  {%- endif %}
+  {%- if category_posts.size > 0 %}
+  <ul class="post-list">
+    {%- for post in category_posts %}
+    <li>
+      <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+      {%- if post.excerpt %}
+      <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      {%- endif %}
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- else %}
+  <p>Nothing here yet.</p>
+  {%- endif %}
+</section>
