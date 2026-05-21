@@ -12,7 +12,22 @@ $grey-color-dark: #9499b7;
 
 .katex { color: $text-color; }
 
-img[src$=".svg"] { filter: invert(1) hue-rotate(180deg); }
+img[src$=".svg"]:not(.company-logo) { filter: invert(1) hue-rotate(180deg); }
+
+.work-experience {
+  text-align: center;
+  margin: 1.5rem 0 2.5rem;
+  h2 { font-style: italic; font-weight: 700; font-size: 1.8rem; margin-bottom: 1.5rem; }
+}
+
+.company-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  .company-logo { height: 50px; width: auto; }
+}
 
 code, pre { background-color: $grey-color-light; color: $text-color; }
 
