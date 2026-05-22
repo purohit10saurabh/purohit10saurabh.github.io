@@ -60,15 +60,39 @@ details {
   .hero .hero-photo img { width: 200px; height: 200px; }
 }
 
+.page-heading { text-align: center; font-size: 2.4rem; margin: 1.5rem 0 1rem; }
+
 .section {
   margin: 2.5rem 0;
   h2 { text-align: center; font-style: italic; font-weight: 700; font-size: 1.8rem; margin: 0 0 1rem; }
   ul li { margin-bottom: 0.6rem; }
   .contact-text { text-align: center; }
-  .section-desc { text-align: center; margin: 0 0 1.5rem; color: $grey-color-dark; font-style: italic; }
+  .section-desc { text-align: center; margin: 0 0 1rem; color: $grey-color-dark; font-style: italic; font-size: 0.95rem; }
 }
 
-.page-heading { text-align: center; font-size: 2.4rem; margin: 1.5rem 0 1rem; }
+.post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 720px;
+
+  > li {
+    padding: 0.85rem 0;
+    margin: 0;
+    border-bottom: 1px solid $grey-color-light;
+  }
+  > li:last-child { border-bottom: none; }
+
+  h3 { font-size: 1.1rem; font-weight: 600; margin: 0 0 0.15rem; }
+  .post-date {
+    display: block;
+    font-size: 0.85rem;
+    color: $grey-color-dark;
+    font-style: italic;
+    margin-bottom: 0.4rem;
+  }
+  p { margin: 0; font-size: 0.95rem; line-height: 1.5; color: $grey-color-dark; }
+}
 
 .highlights {
   list-style: none;
@@ -99,7 +123,51 @@ details {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 3rem;
+  gap: 4rem;
   flex-wrap: wrap;
-  .company-logo { height: 50px; width: auto; }
+
+  a {
+    display: inline-flex;
+    opacity: 0.85;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+  a:hover { opacity: 1; transform: translateY(-2px); }
+
+  .company-logo { height: 50px; width: auto; display: block; }
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.project-card {
+  display: block;
+  padding: 1rem 1.2rem;
+  background-color: $grey-color-light;
+  border: 1px solid rgba(122, 162, 247, 0.15);
+  border-radius: 8px;
+  text-decoration: none;
+  color: $text-color;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+
+  h3 { color: $brand-color; font-size: 1.05rem; margin: 0 0 0.35rem; }
+  p { margin: 0; font-size: 0.9rem; color: $grey-color-dark; line-height: 1.5; }
+
+  &:hover { border-color: $brand-color; transform: translateY(-2px); }
+}
+
+.more-link {
+  text-align: center;
+  margin: 1rem 0 0;
+  font-size: 0.9rem;
+  a { color: $grey-color-dark; text-decoration: none; }
+  a:hover { color: $brand-color; }
+}
+
+@media (max-width: 600px) {
+  .projects { grid-template-columns: 1fr; }
 }

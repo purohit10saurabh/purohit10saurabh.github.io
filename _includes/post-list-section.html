@@ -9,8 +9,9 @@
     {%- for post in category_posts %}
     <li>
       <h3><a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h3>
+      <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %Y" }}</time>
       {%- if post.excerpt %}
-      <p>{{ post.excerpt | strip_html | truncatewords: 40 }}</p>
+      <p>{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
       {%- endif %}
     </li>
     {%- endfor %}
