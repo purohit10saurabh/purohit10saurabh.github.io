@@ -10,6 +10,18 @@ $grey-color-dark: #9499b7;
 
 @import "minima";
 
+@media (prefers-reduced-motion: no-preference) {
+  html { scroll-behavior: smooth; }
+}
+
+.site-footer {
+  border-top: 1px solid $grey-color-light;
+  margin-top: 3rem;
+  padding: 1.25rem 0;
+  text-align: center;
+  p { margin: 0; font-size: 0.85rem; color: $grey-color-dark; font-style: italic; }
+}
+
 .katex { color: $text-color; }
 img[src$=".svg"]:not(.company-logo) { filter: invert(1) hue-rotate(180deg); }
 code, pre { background-color: $grey-color-light; color: $text-color; }
@@ -52,6 +64,26 @@ details {
     transition: background-color 0.15s ease, color 0.15s ease;
   }
   .hero-links a:hover { background-color: $brand-color; color: $background-color; }
+
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 1.1rem;
+    padding: 0;
+    background: none;
+    border: none;
+    font-family: inherit;
+    color: $grey-color-dark;
+    font-size: 2.05rem;
+    font-style: italic;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.15s ease;
+  }
+  .hero-cta-arrow { display: inline-block; transition: transform 0.2s ease; }
+  .hero-cta:hover { color: $brand-color; }
+  .hero-cta:hover .hero-cta-arrow { transform: translateY(3px); }
 }
 
 @media (max-width: 600px) {

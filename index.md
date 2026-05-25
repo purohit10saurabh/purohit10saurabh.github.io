@@ -10,16 +10,17 @@ permalink: /
   </div>
   <div class="hero-text">
     <h1>Hi, I'm <strong>Saurabh</strong>!</h1>
-    <p>Math graduate, 8 years into machine learning research. Off the clock: travel, gym, and books.</p>
+    <p>Math graduate, 8 years of industry experience in machine learning. Outside work: travel, gym, and books.</p>
     <div class="hero-links">
       <a href="{{ '/blog/' | relative_url }}">Blog</a>
       <a href="https://github.com/purohit10saurabh">GitHub</a>
       <a href="https://x.com/purohit10saurab">X (Twitter)</a>
     </div>
+    <button class="hero-cta" type="button" onclick="document.getElementById('learn-more').scrollIntoView({behavior:'smooth'})">Learn more <span class="hero-cta-arrow">↓</span></button>
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="learn-more">
   <h2>Work Experience</h2>
   <div class="company-logos">
     <a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/" aria-label="Microsoft Research"><img src="{{ '/assets/logos/microsoft-research.png' | relative_url }}" alt="Microsoft Research" class="company-logo"></a>
@@ -45,7 +46,7 @@ permalink: /
   <div class="projects">
     <a class="project-card" href="https://github.com/purohit10saurabh/mamba-ssm-macos">
       <h3>Mamba SSM for macOS</h3>
-      <p>Apple Silicon port of Mamba state-space models — runs natively on MPS, no CUDA required.</p>
+      <p>Mamba State Space Models implemented for Apple Silicon GPUs.</p>
     </a>
     <a class="project-card" href="https://github.com/purohit10saurabh/minFLUX">
       <h3>minFLUX</h3>

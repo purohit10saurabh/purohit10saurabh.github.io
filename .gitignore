@@ -1,8 +1,6 @@
-do.txt
 .jekyll-metadata
 .DS_Store
 .vscode/
 _site/
 .jekyll-cache/
-junk/
-logs/
+wip/
