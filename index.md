@@ -10,7 +10,7 @@ permalink: /
   </div>
   <div class="hero-text">
     <h1>Hi, I'm <strong>Saurabh</strong>!</h1>
-    <p>Math graduate, 8 years of industry experience in machine learning. Outside work: travel, gym, and books.</p>
+    <p>I am a math graduate from IIT Kanpur building production computer vision and NLP systems. My work includes co-inventing a US patent in computer vision at Adobe, publishing a <a href="https://www.microsoft.com/en-us/research/publication/generalized-zero-shot-extreme-multi-label-learning/">research paper</a> at KDD'21 while at Microsoft Research, and building <a href="https://github.com/stars/purohit10saurabh/lists/my-stack">open-source libraries</a>. I enjoy <a href="{{ '/hds/' | relative_url }}">mathematics</a>, <a href="{{ '/travel/' | relative_url }}">solo travel</a>, fitness, and long-form reading.</p>
     <div class="hero-links">
       <a href="{{ '/blog/' | relative_url }}">Blog</a>
       <a href="https://github.com/purohit10saurabh">GitHub</a>
@@ -33,11 +33,10 @@ permalink: /
 <section class="section">
   <h2>Highlights</h2>
   <ul class="highlights">
-    <li><span class="year">2026</span>Released open-source projects <strong><a href="https://github.com/purohit10saurabh/mamba-ssm-macos">Mamba SSM for macOS</a></strong> and <strong><a href="https://github.com/purohit10saurabh/minFLUX">minFLUX</a></strong>.</li>
-    <li><span class="year">2026</span>Travelled to <strong>15 countries so far</strong> — see my <strong><a href="{{ '/travel/' | relative_url }}">travel experiences</a></strong>.</li>
+    <li><span class="year">2026</span>Released open-source projects <strong><a href="https://github.com/purohit10saurabh/mamba-ssm-macos">Mamba SSM for macOS</a></strong> and <strong><a href="https://github.com/purohit10saurabh/minFLUX">minFLUX</a></strong>; travelled to 15 countries so far — see my <strong><a href="{{ '/travel/' | relative_url }}">travel experiences</a></strong>.</li>
     <li><span class="year">2025</span>Co-invented a <strong>US patent</strong> in computer vision at <strong><a href="https://www.adobe.com/">Adobe</a></strong>.</li>
-    <li><span class="year">2024</span>Core contributor to <strong><a href="https://research.adobe.com/video/dubbing-lip-sync/">Adobe's production lipsync system</a></strong>; ran training experiments for its audio-to-video model.</li>
-    <li><span class="year">2021</span>Published a <strong><a href="https://www.microsoft.com/en-us/research/publication/generalized-zero-shot-extreme-multi-label-learning/">top AI conference paper</a></strong> at <strong><a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research</a></strong>.</li>
+    <li><span class="year">2022 - 2024</span>Core contributor to the development and training of the audio-to-video model used in <strong><a href="https://research.adobe.com/video/dubbing-lip-sync/">Adobe's production lipsync system</a></strong>. This system is used by millions of users to dub videos into multiple languages with lipsync.</li>
+    <li><span class="year">2019 - 2021</span>Co-authored a <strong><a href="https://www.microsoft.com/en-us/research/publication/generalized-zero-shot-extreme-multi-label-learning/">research paper</a></strong> published at KDD'21 while at Microsoft Research.</li>
   </ul>
 </section>
 

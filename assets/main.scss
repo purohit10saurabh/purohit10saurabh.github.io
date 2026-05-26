@@ -14,6 +14,9 @@ $grey-color-dark: #9499b7;
   html { scroll-behavior: smooth; }
 }
 
+.site-header .site-title, .site-header .site-title:visited { color: $text-color; transition: color 0.15s ease; }
+.site-header .site-title:hover { color: $brand-color; text-decoration: none; }
+
 .site-footer {
   border-top: 1px solid $grey-color-light;
   margin-top: 3rem;
@@ -52,6 +55,8 @@ details {
   .hero-text h1 { font-size: 2.4rem; line-height: 1.2; margin: 0 0 1rem; font-weight: 400; }
   .hero-text h1 strong { color: $brand-color; font-weight: 700; }
   .hero-text p { font-size: 1.1rem; margin: 0 0 1.25rem; color: $text-color; }
+  .hero-text p a { color: $brand-color; text-decoration: underline; text-decoration-color: rgba(122, 162, 247, 0.4); text-underline-offset: 3px; transition: color 0.15s ease, text-decoration-color 0.15s ease; }
+  .hero-text p a:hover { color: #a0b9ff; text-decoration-color: $brand-color; }
 
   .hero-links { display: flex; flex-wrap: wrap; gap: 0.6rem; }
   .hero-links a {
@@ -74,7 +79,7 @@ details {
     background: none;
     border: none;
     font-family: inherit;
-    color: $grey-color-dark;
+    color: $text-color;
     font-size: 2.05rem;
     font-style: italic;
     text-decoration: none;
