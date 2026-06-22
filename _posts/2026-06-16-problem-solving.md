@@ -1,0 +1,45 @@
+---
+layout: post
+title: "My methods for tackling problems"
+date: 2026-06-16
+category: blog
+---
+
+## Order of proofs
+The idea is to test the weakest proof or to explore the least explored direction. To improve a complex system, it means to test the least tested component or improve the least optimized component of a complex system. Find what the final metric is currently most sensitive to. That maybe the most important direction. If it is not sensitive to a component, then why spend time improving it?
+
+***Ex.- We were disscussing if we should try improving the positional embeddings in transformer layers in our model. Instead of using the learnable absolute positional embeddings, should we experiment with 2D RoPE with learnable frequency parameters? It would need quite an effort, a week or more if we iterate further on it. An action oriented thinking would go for it. But I just cared about making the model work. I asked more generally, is the model output sensitive to the choice of layer? Is the current transformer layer good enough? To answer this, I just replaced all the transformer layers with CNN layers with enough receptive field. And the output did not change at all! If you change 10 small components of a transformer layer to make it a CNN layer, some would improve and some would deteriorate it. Let's call them x_1,...,x_10. Now what is the chance that the sum of 10 random numbers is 0? Since the output is identical after these 10 changes, it means that the output is not sensitive to architecture. This proved that the output is not sensitive to the layer choice at all, hence the effort of iterating on positional embeddings would be wasted! The model was not the bottleneck. This one experiment done in a couple of hours saved us from going into the rabbit hole of improving model architecture. Indeed, it turned out that the loss function was the limiting factor. A better adversarial loss with multiple rounds of finetuning took this research project to production.***
+
+P.S. It might be hard to explain in a standup to your manager why you are not trying to improve the positional embeddings with such a reasoning. A certain amount of autonomy is necessary to do the right things.
+
+To find the weakest link, we need an order of proofs from which we can test the weakest proof. An example of such an order of weakest to strongest proofs is-
+From weakest to strongest-
+1. People's choice-
+	- It is a common design choice.
+	- Someone senior than you believes that it works. 
+	- Its paper showed great results.
+2. Theoretically viable: it makes sense to an extent. Hand wavy argument. Like transformer can do linear regression. Whether it is actually doing it is unknown. 
+3. Experimentally proven to better than B.
+4. Mathematically rigorous proof. 
+
+3 and 4 are usually not in conflict. If they are, there is bug in the experiment. The components with weakest proofs should be tested. Like a common design choice for a CNN layer is good should be tried to improve rather when it is tested and shown that changing the loss function is not affecting the results.
+
+## Easy or hard problem?
+When is a something called easy or hard? Hint: It is called by someone.
+
+So when people try it and they are able to do it, it is called easy. When people tried to do it but could not do it, it is called hard. Simple! Then there are things never tried, it is a new thing without the label of easy or hard. 
+
+Many times we know have an idea if a problem is easy or hard. Life is simpler then. If it is easy like boiling rice, do the obvious things like follow a recipe. If it is hard, then atleast do not waste time on obvious things. What to do instead? Do something new that if done, would branch out or lead to many nice things.
+
+The works like `Picbreeder` and `Why greatness cannot be planned` shows how discoveries specially difficult ones are made. People first do obvious things. Like make a goal or proxy/surrogate goal to solve a problem or build something. If it gets solved then, it can be called non serendipitous or easy (given the above definition "when people try it and they are able to do it, it is called easy.")
+
+Now what happens when it does not work? That is when [serendipity](https://en.wikipedia.org/wiki/Serendipity) comes into play. Inverntions like microwave and arguably alphafold were made this way. ***It is when the stepping stones for a hard problem are not known ahead of time.*** It is like going for a seemingly unrelated goal/direction and when a useful thing comes in sight, going for it. This is my model of tackling hard problems as learnt from Kenneth Stanley's works and book 'Why greatness cannot be planned'. The key there is that information(surprisal) gain is more important than optimization. For example, to make the best F1 car today even faster, you need a lot of information about aerodynamics, internal combustion engine etc. Or asking what would happen if instead of making a hyperrealistic video generation model which is hard, we see if we can do the easier task of generate animated videos? The result might be AI Ghibli studio. Also my own work on encoding lipsync as visual latent led to a generalized variable length video encoder for diffusion models. I used the derivative of a function output w.r.t an input variable for deep neural networks finding if model output is sensitive to number of layers or the choice of layer. These were stepping stones. Though instead of trying to be novel, just remove anti-novel biases. Like people tried an idea in their task, it did not work. If there is a stronger proof than this heresay for this idea in your task, it's worth trying.  
+
+When your predictions working on a problem are often wrong, it means you do not have enough information about the system you are working on. Then there should be more orthogonality(explained below), exploration, information gain, derisking or reducing uncertainty. In that case, the maximum suprisal experiment is a good idea. Then when your predictions start becoming more accurate, you can start exploiting your understanding or optimizing the system. However, the ratio of exploration to exploitation should be related to the fraction of your incorrect predictions.
+
+## Orthogonality
+**If the effects of going in two directions are independent, they are called orthogonal.** When it is not improving, think of a new orthogonal direction. Like in a 2D plane, if you are not improving in any direction in the plane, think of a z-axis perpendicular to the plane. Like attention is made efficient by many ML improvements like Linear Attention, Sparse Attention, etc. but if it is deteriorating results on your task, think of a direction orthogoal to ML like Systems improvement ex. Flash Attention. 
+
+Examples-
+- Improving a complex system like an industry scale search engine or a large language model. Assume that the data, model architecture not size, loss are orthogonal directions in the sense that if 2 changes independently improve an objective, together they improve the objective even more. In other words, if changing the architecture from A to B improves the test metric, it would do so irrespective of the data and loss. As a corollary, the optimal data would be same for all model archs and loss functions. In decently optimized systems, there maybe just 1 direction to which the output is sensitive. There are diminishing returns in every direction. Most things would already be optimized enough.
+- Solving a big problem with 10 smaller problems- Assuming 9 are solved, solve 1 difficulty at a time.

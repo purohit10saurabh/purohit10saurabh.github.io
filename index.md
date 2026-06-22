@@ -9,8 +9,8 @@ permalink: /
     <img src="{{ '/assets/me.png' | relative_url }}" alt="Saurabh Purohit">
   </div>
   <div class="hero-text">
-    <h1>Hi, I'm <strong>Saurabh</strong>!</h1>
-    <p>I am a math graduate from IIT Kanpur building production computer vision and NLP systems. My work includes co-inventing a US patent in computer vision at Adobe, publishing a <a href="https://www.microsoft.com/en-us/research/publication/generalized-zero-shot-extreme-multi-label-learning/">research paper</a> at KDD'21 while at Microsoft Research, and building <a href="https://github.com/stars/purohit10saurabh/lists/my-stack">open-source libraries</a>. I enjoy <a href="{{ '/hds/' | relative_url }}">mathematics</a>, <a href="{{ '/travel/' | relative_url }}">solo travel</a>, fitness, and long-form reading.</p>
+    <h1>Hi, I am Saurabh</h1>
+    <p>I am a math graduate from <a href="https://www.iitk.ac.in/">IIT Kanpur</a> building production computer vision and NLP systems. My work includes developing a leading video generation model for <a href="https://research.adobe.com/video/dubbing-lip-sync/">Adobe's zero-shot lipsync system</a>, co-inventing a US patent in computer vision at Adobe, publishing a <a href="https://www.microsoft.com/en-us/research/publication/generalized-zero-shot-extreme-multi-label-learning/">research paper</a> at KDD'21 while at Microsoft Research, and <a href="https://github.com/stars/purohit10saurabh/lists/my-stack">some fun stuff</a>. I enjoy <a href="{{ '/problem-solving/' | relative_url }}">problem solving</a>, <a href="{{ '/hds/' | relative_url }}">mathematics</a>, <a href="{{ '/travel/' | relative_url }}">solo travel</a>, fitness, and long-form reading.</p>
     <div class="hero-links">
       <a href="{{ '/blog/' | relative_url }}">Blog</a>
       <a href="https://github.com/purohit10saurabh">GitHub</a>
@@ -43,12 +43,16 @@ permalink: /
 <section class="section">
   <h2>Open Source</h2>
   <div class="projects">
+    <a class="project-card" href="https://github.com/purohit10saurabh/tinytorchcompile">
+      <h3>Demo of operator fusion</h3>
+      <p>Answers the question: How does torch.compile() achieve massive speedups despite highly optimized NumPy functions?</p>
+    </a>
     <a class="project-card" href="https://github.com/purohit10saurabh/mamba-ssm-macos">
       <h3>Mamba SSM for macOS</h3>
       <p>Mamba State Space Models implemented for Apple Silicon GPUs.</p>
     </a>
     <a class="project-card" href="https://github.com/purohit10saurabh/minFLUX">
-      <h3>minFLUX</h3>
+      <h3>Core diffusion model implementation</h3>
       <p>Minimal, hackable implementation of FLUX diffusion models.</p>
     </a>
   </div>
