@@ -9,8 +9,8 @@ permalink: /
     <img src="{{ '/assets/me.png' | relative_url }}" alt="Saurabh Purohit">
   </div>
   <div class="hero-text">
-    <h1>Hi, I am Saurabh</h1>
-    <p>I am a math graduate from <a href="https://www.iitk.ac.in/">IIT Kanpur</a> building production computer vision and NLP systems. My work includes developing a leading video generation model for <a href="https://research.adobe.com/video/dubbing-lip-sync/">Adobe's zero-shot lipsync system</a>, co-inventing a US patent in computer vision at Adobe, publishing a <a href="https://www.microsoft.com/en-us/research/publication/generalized-zero-shot-extreme-multi-label-learning/">research paper</a> at KDD'21 while at Microsoft Research, and <a href="https://github.com/stars/purohit10saurabh/lists/my-stack">some fun stuff</a>. I enjoy <a href="{{ '/problem-solving/' | relative_url }}">problem solving</a>, <a href="{{ '/hds/' | relative_url }}">mathematics</a>, <a href="{{ '/travel/' | relative_url }}">solo travel</a>, fitness, and long-form reading.</p>
+    <h1>Hi!</h1>
+    <p>I am a math graduate from <a href="https://www.iitk.ac.in/">IIT Kanpur</a> doing machine learning research. I've worked on <a href="https://research.adobe.com/video/dubbing-lip-sync/">Adobe's zero-shot lipsync system</a> (co-inventor on its U.S. patent), published a <a href="https://www.microsoft.com/en-us/research/publication/generalized-zero-shot-extreme-multi-label-learning/">research paper at KDD</a> at Microsoft Research, and build <a href="https://github.com/stars/purohit10saurabh/lists/my-stack">open-source ML projects</a>. I enjoy <a href="{{ '/research/' | relative_url }}">research</a>, <a href="{{ '/hds/' | relative_url }}">mathematics</a>, <a href="{{ '/travel/' | relative_url }}">solo travel</a>, fitness, and reading paper books.</p>
     <div class="hero-links">
       <a href="{{ '/blog/' | relative_url }}">Blog</a>
       <a href="https://github.com/purohit10saurabh">GitHub</a>
@@ -33,10 +33,11 @@ permalink: /
 <section class="section">
   <h2>Highlights</h2>
   <ul class="highlights">
-    <li><span class="year">2026</span>Released open-source projects <strong><a href="https://github.com/purohit10saurabh/mamba-ssm-macos">Mamba SSM for macOS</a></strong> and <strong><a href="https://github.com/purohit10saurabh/minFLUX">minFLUX</a></strong>; travelled to 15 countries so far — see my <strong><a href="{{ '/travel/' | relative_url }}">travel experiences</a></strong>.</li>
-    <li><span class="year">2025</span>Co-invented a <strong>US patent</strong> in computer vision at <strong><a href="https://www.adobe.com/">Adobe</a></strong>.</li>
-    <li><span class="year">2022 - 2024</span>Core contributor to the development and training of the audio-to-video model used in <strong><a href="https://research.adobe.com/video/dubbing-lip-sync/">Adobe's production lipsync system</a></strong>. This system is used by millions of users to dub videos into multiple languages with lipsync.</li>
-    <li><span class="year">2019 - 2021</span>Co-authored a <strong><a href="https://www.microsoft.com/en-us/research/publication/generalized-zero-shot-extreme-multi-label-learning/">research paper</a></strong> published at KDD'21 while at Microsoft Research.</li>
+    <li><span class="year">2026</span>Released open-source projects <strong><a href="https://github.com/purohit10saurabh/mamba-ssm-macos">Mamba SSM for macOS</a></strong>, <strong><a href="https://github.com/purohit10saurabh/tinytorchcompile">tinytorchcompile</a></strong>, and <strong><a href="https://github.com/purohit10saurabh/minFLUX">minFLUX</a></strong>. Wrote a <strong><a href="{{ '/travel/' | relative_url }}">travel blog</a></strong> about my experiences travelling to 15 countries.</li>
+    <li><span class="year">2025</span>Co-invented the <strong>U.S. patent in computer vision</strong> for Adobe's lipsync system. Created a RAG based <strong><a href="https://www.deccanchronicle.com/education/the-silent-salience-of-prashantadvait-foundation-1926013#:~:text=One%20standout%20feature%20is%20%22Ask%20AP%2C%22%20an%20AI%20tool%20trained%20on%20Acharya%20Prashant%27s%20archive%20of%2010%2C000%2B%20articles.%20Users%20can%20pose%20questions%20about%20life%2C%20relationships%2C%20career%2C%20philosophy%2C%20and%20receive%20responses%20drawn%20from%20this%20vast%20repository%20of%20teachings.">production chat system</a></strong> serving ~10k documents with ~4k daily queries.</li>
+    <li><span class="year">2024</span>Core contributor to the research and training of the audio-to-video model used in <strong><a href="https://research.adobe.com/video/dubbing-lip-sync/">Adobe's production lipsync system</a></strong>. It is used by millions of users to dub videos into multiple languages with lipsync.</li>
+    <li><span class="year">2022-2023</span>Led the moonshot project of solving zero-shot lipsync at <strong><a href="https://timesofindia.indiatimes.com/gadgets-news/adobe-buys-indian-generative-ai-startup-rephrase-ai-what-makes-the-deal-important/articleshow/105425071.cms">Rephrase.ai</a></strong>. Created an industry leading video generation model trained on 1000s of faces to generate lipsync for any video. For its deployment in Adobe Firefly, it was trained on a cluster of 4 nodes for 12 hours, each node consisting of 8 A100 GPUs, with a total cost of just $1500. Despite its low training cost, it generates millions of dollars in revenue. Hence it was named SpArtN(Speech Articulation Network) as it was trained in a spartan way with limited resources and <strong><a href="{{ '/research/' | relative_url }}">rigorous experimentation</a></strong>. </li>
+    <li><span class="year">2019-2021</span> At <strong><a href="https://www.microsoft.com/en-us/research/lab/microsoft-research-india/">Microsoft Research</a></strong>, I created extreme scale zero-shot research datasets addressing challenges in extreme classification. Helped my mentor in developing a novel information retrieval algorithm, resulting in a <strong><a href="https://www.microsoft.com/en-us/research/publication/generalized-zero-shot-extreme-multi-label-learning/">research paper at SIGKDD'21</a></strong>, a top-tier AI conference in data mining. </li>
   </ul>
 </section>
 
@@ -52,14 +53,21 @@ permalink: /
       <p>Mamba State Space Models implemented for Apple Silicon GPUs.</p>
     </a>
     <a class="project-card" href="https://github.com/purohit10saurabh/minFLUX">
-      <h3>Core diffusion model implementation</h3>
-      <p>Minimal, hackable implementation of FLUX diffusion models.</p>
+      <h3>Diffusion model implementation</h3>
+      <p>A hackable implementation of FLUX diffusion models.</p>
     </a>
   </div>
   <p class="more-link"><a href="https://github.com/purohit10saurabh">More on GitHub →</a></p>
 </section>
 
-<section class="section">
-  <h2>Get in Touch</h2>
-  <p class="contact-text">Feel free to reach out at <em>my_github_username@gmail.com</em> or <a href="https://x.com/purohit10saurab">X (Twitter)</a>.</p>
-</section>
+<div class="social-icons" aria-label="Contact links">
+  <a class="social-icon social-icon-light" href="mailto:saurabh97purohit@gmail.com" aria-label="Email">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.75 5.25h18.5v13.5H2.75zm2.02 1.5L12 12.18l7.23-5.43zm-1.02.96v9.54h16.5V7.71L12 13.89z"/></svg>
+  </a>
+  <a class="social-icon social-icon-light" href="https://github.com/purohit10saurabh" aria-label="GitHub">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.18-3.37-1.18-.45-1.15-1.1-1.46-1.1-1.46-.9-.61.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.64.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03A9.5 9.5 0 0 1 12 6c.85 0 1.7.11 2.5.34 1.9-1.3 2.74-1.03 2.74-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.86v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2"/></svg>
+  </a>
+  <a class="social-icon social-icon-light" href="https://x.com/purohit10saurab" aria-label="X">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.46l8.6-9.83L0 1.15h7.59l5.24 6.93zm-1.29 19.49h2.04L6.48 3.26H4.29z"/></svg>
+  </a>
+</div>
