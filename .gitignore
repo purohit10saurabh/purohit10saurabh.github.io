@@ -1,6 +1,11 @@
+# Jekyll
 .jekyll-metadata
 .DS_Store
 .vscode/
 _site/
 .jekyll-cache/
+.bundle/
+
+# Personal
+todo.md
 wip/

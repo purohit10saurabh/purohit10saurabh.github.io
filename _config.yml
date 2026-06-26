@@ -1,7 +1,16 @@
 title: Saurabh Purohit
-description: About me
+tagline: Mathematician on a computer
+description: "Saurabh Purohit is a machine learning researcher and engineer."
 url: "https://purohit10saurabh.github.io"
 baseurl: ""
+author:
+  name: Saurabh Purohit
+image: /assets/me.png
+google_site_verification: JHhIr6uoPYjC2XjH3i6goF6lgYd2fHGUNLtw4r5_858
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 permalink: /:title/
 
