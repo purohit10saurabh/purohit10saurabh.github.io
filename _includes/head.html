@@ -3,6 +3,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
+  {%- if page.url == '/' -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Saurabh Purohit",
+    "url": "{{ site.url }}{{ site.baseurl }}/",
+    "image": "{{ '/assets/me.png' | absolute_url }}",
+    "description": "{{ site.tagline }}",
+    "alumniOf": "Indian Institute of Technology Kanpur",
+    "worksFor": [
+      {
+        "name": "Adobe",
+        "url": "https://www.adobe.com/"
+      },
+      {
+        "name": "Rephrase.ai",
+        "url": "https://timesofindia.indiatimes.com/gadgets-news/adobe-buys-indian-generative-ai-startup-rephrase-ai-what-makes-the-deal-important/articleshow/105425071.cms"
+      },
+      {
+        "name": "Microsoft Research",
+        "url": "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/"
+      },
+      {
+        "name": "Goldman Sachs",
+        "url": "https://www.goldmansachs.com/"
+      }
+    ],
+    "sameAs": [
+      "https://github.com/purohit10saurabh",
+      "https://x.com/purohit10saurab"
+    ]
+  }
+  </script>
+  {%- endif -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
   {%- feed_meta -%}

@@ -67,6 +67,7 @@ details {
   .hero-text { flex: 1; }
   .hero-text h1 { font-size: 2.4rem; line-height: 1.2; margin: 0 0 1rem; font-weight: 400; }
   .hero-text h1 strong { color: $brand-color; font-weight: 700; }
+  .hero-text .hero-tagline { font-size: 1.2rem; color: $grey-color-dark; margin: -0.5rem 0 1.25rem; font-weight: 500; }
   .hero-text p { font-size: 1.1rem; margin: 0 0 1.25rem; color: $text-color; }
   .hero-text p a { color: $brand-color; text-decoration: underline; text-decoration-color: rgba(122, 162, 247, 0.4); text-underline-offset: 3px; transition: color 0.15s ease, text-decoration-color 0.15s ease; }
   .hero-text p a:hover { color: #a0b9ff; text-decoration-color: $brand-color; }
