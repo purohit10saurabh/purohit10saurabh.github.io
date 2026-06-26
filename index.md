@@ -9,8 +9,7 @@ permalink: /
     <img src="{{ '/assets/me.png' | relative_url }}" alt="Saurabh Purohit">
   </div>
   <div class="hero-text">
-    <h1>Hi!</h1>
-    <p>I am a math graduate from <a href="https://www.iitk.ac.in/">IIT Kanpur</a> doing machine learning research. I've worked on <a href="https://research.adobe.com/video/dubbing-lip-sync/">Adobe's zero-shot lipsync system</a> (co-inventor on its U.S. patent), published a <a href="https://www.microsoft.com/en-us/research/publication/generalized-zero-shot-extreme-multi-label-learning/">research paper at KDD</a> at Microsoft Research, and build <a href="https://github.com/stars/purohit10saurabh/lists/my-stack">open-source ML projects</a>. I enjoy <a href="{{ '/research/' | relative_url }}">research</a>, <a href="{{ '/hds/' | relative_url }}">mathematics</a>, <a href="{{ '/travel/' | relative_url }}">solo travel</a>, fitness, and reading paper books.</p>
+    <p>I am a math graduate from <a href="https://www.iitk.ac.in/">IIT Kanpur</a> doing machine learning research. I've worked on developing the audio-to-video model for <a href="https://research.adobe.com/video/dubbing-lip-sync/">Adobe's zero-shot lipsync system</a> (co-inventor on its U.S. patent), published a <a href="https://www.microsoft.com/en-us/research/publication/generalized-zero-shot-extreme-multi-label-learning/">research paper at KDD</a> at Microsoft Research, and built <a href="https://github.com/stars/purohit10saurabh/lists/my-stack">open-source ML projects</a>. I enjoy <a href="{{ '/research/' | relative_url }}">research</a>, <a href="{{ '/hds/' | relative_url }}">mathematics</a>, <a href="{{ '/travel/' | relative_url }}">solo travel</a>, fitness, and reading paper books.</p>
     <div class="hero-links">
       <a href="{{ '/blog/' | relative_url }}">Blog</a>
       <a href="https://github.com/purohit10saurabh">GitHub</a>

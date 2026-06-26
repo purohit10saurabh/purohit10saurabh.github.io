@@ -25,6 +25,19 @@ $grey-color-dark: #9499b7;
   p { margin: 0; font-size: 0.85rem; color: $grey-color-dark; font-style: italic; }
 }
 
+blockquote {
+  background-color: $grey-color-light;
+  border-left: 4px solid $brand-color;
+  border-radius: 4px;
+  padding: 0.75em 1em;
+  margin: 1.5em 0;
+  color: $text-color;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: normal;
+  p { margin: 0; }
+}
+
 .katex { color: $text-color; }
 img[src$=".svg"]:not(.company-logo) { filter: invert(1) hue-rotate(180deg); }
 code, pre { background-color: $grey-color-light; color: $text-color; }
