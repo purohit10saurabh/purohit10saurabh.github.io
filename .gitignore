@@ -1,6 +1,6 @@
-junk/
-logs/
-_site/
-.DS_Store
-.jekyll-cache/
 .jekyll-metadata
+.DS_Store
+.vscode/
+_site/
+.jekyll-cache/
+wip/
