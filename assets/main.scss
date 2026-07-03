@@ -25,6 +25,19 @@ $grey-color-dark: #9499b7;
   p { margin: 0; font-size: 0.85rem; color: $grey-color-dark; font-style: italic; }
 }
 
+blockquote {
+  background-color: $grey-color-light;
+  border-left: 4px solid $brand-color;
+  border-radius: 4px;
+  padding: 0.75em 1em;
+  margin: 1.5em 0;
+  color: $text-color;
+  font-style: normal;
+  font-size: 1rem;
+  letter-spacing: normal;
+  p { margin: 0; }
+}
+
 .katex { color: $text-color; }
 img[src$=".svg"]:not(.company-logo) { filter: invert(1) hue-rotate(180deg); }
 code, pre { background-color: $grey-color-light; color: $text-color; }
@@ -54,6 +67,7 @@ details {
   .hero-text { flex: 1; }
   .hero-text h1 { font-size: 2.4rem; line-height: 1.2; margin: 0 0 1rem; font-weight: 400; }
   .hero-text h1 strong { color: $brand-color; font-weight: 700; }
+  .hero-text .hero-tagline { font-size: 1.2rem; color: $grey-color-dark; margin: -0.5rem 0 1.25rem; font-weight: 500; }
   .hero-text p { font-size: 1.1rem; margin: 0 0 1.25rem; color: $text-color; }
   .hero-text p a { color: $brand-color; text-decoration: underline; text-decoration-color: rgba(122, 162, 247, 0.4); text-underline-offset: 3px; transition: color 0.15s ease, text-decoration-color 0.15s ease; }
   .hero-text p a:hover { color: #a0b9ff; text-decoration-color: $brand-color; }
@@ -205,6 +219,31 @@ details {
   a:hover { color: $brand-color; }
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1.05rem;
+  margin: 2.5rem 0 0;
+
+  .social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    color: #111;
+    border-radius: 50%;
+    transition: opacity 0.15s ease, transform 0.15s ease;
+  }
+
+  .social-icon:hover { opacity: 0.85; transform: translateY(-2px); }
+  .social-icon-light { background: #f5f5f5; }
+  svg { width: 3rem; height: 3rem; fill: currentColor; }
+}
+
 @media (max-width: 600px) {
   .projects { grid-template-columns: 1fr; }
+  .social-icons { gap: 0.7rem; }
+  .social-icons .social-icon { width: 4rem; height: 4rem; }
+  .social-icons svg { width: 2.4rem; height: 2.4rem; }
 }
