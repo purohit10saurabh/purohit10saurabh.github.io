@@ -21,3 +21,6 @@ There is a saying `Jack of all trades, master of none is better than a jack of n
 
 ## Types of valuable work
 Important but not urgent work is more valuable than urgent but not important work. Urgent work is easily seen by a leader, but important but not urgent work is easily overlooked.
+
+## Jack of all trades, master of none is better than a jack of none, master of one
+People are good at different things. To become a jack of many trades, learn from a variety of people good in their respective fields. 
