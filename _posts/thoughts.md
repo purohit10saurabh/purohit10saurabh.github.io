@@ -4,6 +4,7 @@ title: "My thoughts"
 date: 2026-06-02
 category: life
 ---
+
 ## Depth over action
 Some people say that they have a bias towards action. I have a bias towards depth instead of action. For example, I understand on a basic level the math, failure modes, and limitations of a machine learning model before training it, rather than simply training it without understanding how it works. This leads to a deeper understanding. The goal is to understand deeply rather than equating action with progress.
 
@@ -20,7 +21,7 @@ Simple questions to test whether you truly understand something:
 There is a saying `Jack of all trades, master of none is better than a jack of none, master of one.` I probably am top 1% in math and coding. But I am decent in other areas like fitness, reading, travelling, and writing. And I am bad in areas like cooking, singing, playing instruments.
 
 ## Types of valuable work
-Important but not urgent work is more valuable than urgent but not important work. Urgent work is easily seen by a leader, but important but not urgent work is easily overlooked.
+Important but not urgent work is more valuable than urgent but not important work.
 
 ## Jack of all trades, master of none is better than a jack of none, master of one
-People are good at different things. To become a jack of many trades, learn from a variety of people good in their respective fields. 
+People are good at different things. To become a jack of many trades, learn from a variety of masters in their respective fields. 
