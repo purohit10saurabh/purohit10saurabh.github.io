@@ -1,0 +1,30 @@
+# Central list of external link targets used across the site.
+# Referenced from templates via {{ site.data.links.<key> }} so every URL lives
+# in one place. Editing a URL here updates it everywhere; rendered output is unchanged.
+
+# Profiles & contact
+github: "https://github.com/purohit10saurabh"
+twitter: "https://x.com/purohit10saurab"
+email: "saurabh97purohit@gmail.com"
+linkedin: "https://www.linkedin.com/in/saurabh-purohit-55896b203/"
+github_stack: "https://github.com/stars/purohit10saurabh/lists/my-stack"
+
+# Education & employers
+iit_kanpur: "https://www.iitk.ac.in/"
+msr_lab: "https://www.microsoft.com/en-us/research/lab/microsoft-research-india/"
+adobe: "https://www.adobe.com/"
+goldman_sachs: "https://www.goldmansachs.com/"
+rephrase_news: "https://timesofindia.indiatimes.com/gadgets-news/adobe-buys-indian-generative-ai-startup-rephrase-ai-what-makes-the-deal-important/articleshow/105425071.cms"
+education_foundation: "https://acharyaprashant.org/en/prashantadvait-foundation"
+
+# Work, papers & references
+adobe_lipsync: "https://research.adobe.com/video/dubbing-lip-sync/"
+kdd_paper: "https://www.microsoft.com/en-us/research/publication/generalized-zero-shot-extreme-multi-label-learning/"
+shannon_theorem: "https://en.wikipedia.org/wiki/Shannon%27s_source_coding_theorem"
+lipsync_video: "https://www.youtube.com/embed/M7QuHgzzg-g"
+media: "https://www.deccanchronicle.com/education/the-silent-salience-of-prashantadvait-foundation-1926013#:~:text=One%20standout%20feature,ways%20previously%20impossible."
+
+# Open-source projects
+mamba_repo: "https://github.com/purohit10saurabh/mamba-ssm-macos"
+tinytorch_repo: "https://github.com/purohit10saurabh/tinytorchcompile"
+toyflux_repo: "https://github.com/purohit10saurabh/toyFLUX"
