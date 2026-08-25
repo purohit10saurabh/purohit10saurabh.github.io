@@ -13,8 +13,8 @@ permalink: /
   <div class="hero-text">
     <h1>Saurabh Purohit</h1>
     <p class="hero-tagline">{{ site.tagline }}</p>
-    <p>I am a math graduate from <a href="{{ links.iit_kanpur }}">IIT Kanpur</a> with machine learning experience at Microsoft Research, Adobe etc. My works include developing the lipsync model for <a href="{{ links.adobe_lipsync }}">Adobe's dubbing & lipsync system</a> (inventor on its patent), a <a href="{{ links.kdd_paper }}">research paper at KDD</a> by Microsoft Research, and <a href="{{ links.github_stack }}">fun open-source projects</a>. I enjoy <a href="{{ '/hds/' | relative_url }}">math</a>, <a href="{{ '/research/' | relative_url }}">research</a>, <a href="{{ '/travel/' | relative_url }}">solo travel</a>, fitness, and reading books.</p>
-    <div class="hero-links">
+    <p>Hi, I am a math graduate from <a href="{{ links.iit_kanpur }}">IIT Kanpur</a> with machine learning experience at Microsoft Research, Adobe etc. My works include developing the lipsync model for <a href="{{ links.adobe_lipsync }}">Adobe's dubbing & lipsync system</a> (inventor on its patent), a <a href="{{ links.kdd_paper }}">research paper at KDD</a> by Microsoft Research, and <a href="{{ links.github_stack }}">fun open-source projects</a>. Apart from <a href="{{ '/hds/' | relative_url }}">math</a> and <a href="{{ '/research/' | relative_url }}">research</a>, I enjoy a life with <a href="{{ '/travel/' | relative_url }}">travel</a>, fitness, and books in it.</p>
+    <div class="hero-links">  
       <a href="{{ '/blog/' | relative_url }}">Blog</a>
       <a href="{{ links.github }}">GitHub</a>
       <a href="{{ links.twitter }}">X (Twitter)</a>
@@ -37,10 +37,10 @@ permalink: /
 <section class="section">
   <h2>Highlights</h2>
   <ul class="highlights">
-    <li><span class="hl-meta"><span class="year">2026</span><span class="company">Sabbatical</span></span>Released open-source projects: <strong><a href="{{ links.mamba_repo }}">Mamba SSM for macOS</a></strong> (68 ⭐️), <strong><a href="{{ links.tinytorch_repo }}">demystifying torch.compile</a></strong>, and a <strong><a href="{{ links.toyflux_repo }}">toy diffusion model</a></strong>. Created a <strong><a href="{{ '/blog/' | relative_url }}">blog</a></strong> to write on some interesting topics such as <strong><a href="{{ '/hds/' | relative_url }}">the curse of dimensionality</a></strong>.</li>
-    <li><span class="hl-meta"><span class="year">2025</span><span class="company">Lead of Machine Learning at an <a href="{{ links.education_foundation }}">education foundation</a></span></span>Created its flagship fact-checking chat system end-to-end, from ideation to production (<strong><a href="{{ links.media }}">media mention</a></strong>). Also developed production ML algorithms for a feed recommender system.</li>
+    <li><span class="hl-meta"><span class="year">2026</span><span class="company">Sabbatical</span></span>Released open-source projects: <strong><a href="{{ links.mamba_repo }}">Mamba SSM for macOS</a></strong> (<span class="gh-stars" data-repo="{{ links.mamba_repo | remove: 'https://github.com/' }}">70</span> ⭐️), <strong><a href="{{ links.tinytorch_repo }}">demystifying torch.compile</a></strong>, and a <strong><a href="{{ links.toyflux_repo }}">toy diffusion model</a></strong>. Enjoyed writing <strong><a href="{{ '/blog/' | relative_url }}">blogs</a></strong> on interesting technical topics such as <strong><a href="{{ '/hds/' | relative_url }}">the curse of dimensionality</a></strong>.</li>
+    <li><span class="hl-meta"><span class="year">2025</span><span class="company">Lead of Machine Learning at an <a href="{{ links.education_foundation }}">education foundation</a></span></span>Created its flagship fact-checking RAG based chat system end-to-end, from ideation to production (<strong><a href="{{ links.media }}">media mention</a></strong>).</li>
     <li><span class="hl-meta"><span class="year">2024</span><span class="company">Senior Machine Learning Engineer at <a href="{{ links.adobe }}">Adobe</a></span></span>Core contributor in the research and training of the audio-to-video lipsync model used in <strong><a href="{{ links.adobe_lipsync }}">Adobe's dubbing and lipsync system</a></strong>, and an inventor in its filed U.S. patent. This system is used by millions of users to dub videos into multiple languages with lipsync.<div class="highlight-media video-embed"><iframe src="{{ links.lipsync_video }}" title="Zero-shot lipsync demo" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div></li>
-    <li><span class="hl-meta"><span class="year">2024</span><span class="company"><a href="{{ links.adobe }}">Adobe</a></span></span>Developed PoC of a video autoencoder for diffusion models with variable latent size reducing the average latent size by a factor of 8-16x, trading off quality for speed. Based on <a href="{{ links.shannon_theorem }}">Shannon's source coding theorem</a>, the high-level idea is that videos with more motion require a larger representation space compared to more static videos. Hence for optimal compression, the latent size to compress a video should vary depending on the information content (like motion) of that video. Moreover, since diffusion models can train on arbitrary sized inputs, this idea is feasible for the latent VAE used in diffusion models though it would require a more intricate Pytorch implementation. This can speedup its training and inference.</li>
+    <li><span class="hl-meta"><span class="year">2024</span><span class="company"><a href="{{ links.adobe }}">Adobe</a></span></span>Developed PoC of a video autoencoder for diffusion models with variable latent size reducing the average latent size by a factor of 8-16x, trading off quality for speed. Based on <a href="{{ links.matryoshka_paper }}">Matryoshka Representation Learning</a> and <a href="{{ links.shannon_theorem }}">Shannon's source coding theorem</a>, the high-level idea is that videos with more motion require a larger representation space compared to more static videos. Hence for optimal compression, the latent size to compress a video should vary depending on the information content (like motion) of that video. Moreover, since diffusion models can train on arbitrary sized inputs, this idea is feasible for the latent VAE used in diffusion models though it would require a more intricate Pytorch implementation. This can speedup its training and inference.</li>
     <li><span class="hl-meta"><span class="year">2022-23</span><span class="company">Deep Learning Researcher at <a href="{{ links.rephrase_news }}">Rephrase.ai</a></span></span>Led its most important project of generating lipsync for any given face. It resulted in an industry leading lipsync model used in Adobe Firefly to dub and lipsync any video. Developed frugally with <strong><a href="{{ '/research/' | relative_url }}">rigorous experimentation</a></strong>, its production model trains 1000s of faces on 4 nodes of 8 A100 GPUs each for 12 hours, costing only ~$1500. Despite the low training cost, it is used by millions of Adobe users generating millions of dollars in revenue.</li>
     <li><span class="hl-meta"><span class="year">2019-21</span><span class="company">Research Fellow at <a href="{{ links.msr_lab }}">Microsoft Research</a></span></span>Worked on a novel zero-shot information retrieval algorithm, resulting in a <strong><a href="{{ links.kdd_paper }}">research paper at SIGKDD'21</a></strong>. This highly scalable algorithm for multi-label classification with millions of labels trains in just a few hours on a CPU and predicts in milliseconds for low latency applications. Created its zero-shot research datasets addressing real world challenges in industry scale recommendation systems. Its A/B test in Bing Ads recommendation system showed 17% and 3.4% gains in click through rate of IR based system and unseen query coverage respectively.<img class="highlight-media" src="{{ '/assets/home/long_tail.png' | relative_url }}" alt="Long-tail label distribution in extreme classification"></li>
     <li><span class="hl-meta"><span class="year">2018-19</span><span class="company">Analyst at <a href="{{ links.goldman_sachs }}">Goldman Sachs</a></span></span>Used regression analysis and outlier removal to improve the R-squared error of a production financial model drastically, having an impact of millions of dollars.</li>
@@ -53,14 +53,17 @@ permalink: /
     <a class="project-card" href="{{ links.mamba_repo }}">
       <h3>Mamba SSM for macOS</h3>
       <p>Mamba State Space Models implemented for Apple Silicon GPUs.</p>
+      <span class="project-stars"><span class="gh-stars" data-repo="{{ links.mamba_repo | remove: 'https://github.com/' }}">69</span> ⭐️</span>
     </a>
     <a class="project-card" href="{{ links.tinytorch_repo }}">
       <h3>Demystifying torch.compile</h3>
       <p>How does torch.compile achieve massive speedups despite optimized torch functions?</p>
+      <span class="project-stars"><span class="gh-stars" data-repo="{{ links.tinytorch_repo | remove: 'https://github.com/' }}">7</span> ⭐️</span>
     </a>
     <a class="project-card" href="{{ links.toyflux_repo }}">
       <h3>Toy diffusion model implementation</h3>
       <p>A toy implementation of FLUX diffusion transformers</p>
+      <span class="project-stars"><span class="gh-stars" data-repo="{{ links.toyflux_repo | remove: 'https://github.com/' }}">14</span> ⭐️</span>
     </a>
     <a class="project-card project-card-more" href="{{ links.github }}">
       <h3>More on GitHub →</h3>
@@ -85,3 +88,5 @@ permalink: /
   </a>
 </div>
 </section>
+
+{% include github-stars.html %}

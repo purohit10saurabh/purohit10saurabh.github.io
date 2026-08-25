@@ -1,0 +1,20 @@
+<!-- Live GitHub star counts. Any element with class "gh-stars" and a
+     data-repo="owner/name" attribute gets its text replaced by the repo's
+     current stargazer count. The hardcoded text stays as a fallback if the
+     GitHub API is unreachable or rate-limited (60 req/hr unauthenticated). -->
+<script>
+(function () {
+  document.querySelectorAll('.gh-stars').forEach(function (el) {
+    var repo = el.getAttribute('data-repo');
+    if (!repo) return;
+    fetch('https://api.github.com/repos/' + repo)
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (data) {
+        if (data && typeof data.stargazers_count === 'number') {
+          el.textContent = data.stargazers_count.toLocaleString();
+        }
+      })
+      .catch(function () { /* keep fallback text */ });
+  });
+})();
+</script>
