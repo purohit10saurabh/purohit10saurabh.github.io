@@ -35,3 +35,11 @@ bash serve.sh <page>   # serves localhost:4000/<page>/ instead
 ## SEO notes
 
 Indexing for the site depends on: `jekyll-sitemap` generating `sitemap.xml`, `robots.txt` pointing at it, a `google_site_verification` string in `_config.yml`, and Person JSON-LD structured data in `_includes/head.html` (with a `sameAs` list of profile links). If adding new profile links (LinkedIn, Scholar, etc.), add them to that `sameAs` list.
+
+## Analytics
+
+Visitor stats come from **Cloudflare Web Analytics** (beacon mode — the site is on GitHub Pages, not proxied through Cloudflare DNS). Dashboard: dash.cloudflare.com -> Web Analytics.
+
+- Token lives in `_config.yml` as `cloudflare_analytics` (public by design — it ships in client HTML, not a secret).
+- `_includes/cloudflare-analytics.html` holds the beacon `<script>`; `_includes/head.html` includes it only when `jekyll.environment == 'production'` **and** the token is non-blank. So local `serve.sh` previews (development env) are never tracked and don't pollute the stats — same guard pattern as the theme's `google-analytics.html` hook.
+- To swap/disable: edit or blank the `cloudflare_analytics` value in `_config.yml`. Blanking it (`""`) makes the `!= blank` guard skip the include entirely.
