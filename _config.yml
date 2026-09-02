@@ -31,3 +31,15 @@ sass:
 
 github_username: purohit10saurabh
 twitter_username: purohit10saurab
+
+# Keep dev/meta files out of the built site (a custom exclude replaces Jekyll's
+# defaults, so the standard entries are repeated here alongside our own).
+exclude:
+  - CLAUDE.md
+  - serve.sh
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .sass-cache/
+  - .jekyll-cache/
+  - node_modules/

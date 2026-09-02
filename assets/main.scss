@@ -84,6 +84,35 @@ details {
   }
   .hero-links a:hover { background-color: $brand-color; color: $background-color; }
 
+  .hero-links a.hero-link-primary { background-color: $brand-color; color: $background-color; font-weight: 600; }
+  .hero-links a.hero-link-primary:hover { background-color: #a0b9ff; }
+
+  .hero-latest {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 0.5rem;
+    margin-top: 1.1rem;
+    padding: 0.4rem 0.85rem;
+    border-radius: 6px;
+    background-color: $grey-color-light;
+    border: 1px solid rgba(122, 162, 247, 0.15);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: border-color 0.15s ease;
+  }
+  .hero-latest:hover { border-color: $brand-color; }
+  .hero-latest-label {
+    color: $brand-color;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  }
+  .hero-latest-title { color: $text-color; }
+  .hero-latest-arrow { color: $brand-color; display: inline-block; transition: transform 0.15s ease; }
+  .hero-latest:hover .hero-latest-arrow { transform: translateX(3px); }
+
   .hero-cta {
     display: inline-flex;
     align-items: center;
@@ -145,6 +174,19 @@ details {
   p { margin: 0; font-size: 0.95rem; line-height: 1.5; color: $grey-color-dark; }
 }
 
+%chip {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  background-color: $grey-color-light;
+  color: $brand-color;
+  border: 1px solid rgba(122, 162, 247, 0.25);
+  border-radius: 6px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-family: ui-monospace, "SF Mono", Menlo, monospace;
+  letter-spacing: 0.02em;
+}
+
 .highlights {
   list-style: none;
   padding: 0;
@@ -178,18 +220,7 @@ details {
     margin-bottom: 0.4rem;
   }
 
-  .year {
-    display: inline-block;
-    padding: 0.15rem 0.55rem;
-    background-color: $grey-color-light;
-    color: $brand-color;
-    border: 1px solid rgba(122, 162, 247, 0.25);
-    border-radius: 6px;
-    font-size: 0.78rem;
-    font-weight: 700;
-    font-family: ui-monospace, "SF Mono", Menlo, monospace;
-    letter-spacing: 0.02em;
-  }
+  .year { @extend %chip; }
 
   .company {
     font-weight: 600;
@@ -197,6 +228,79 @@ details {
     letter-spacing: 0.01em;
 
     a { color: $text-color; text-decoration: none; border-bottom: 1px solid rgba(122, 162, 247, 0.4); }
+    a:hover { color: $brand-color; border-bottom-color: $brand-color; }
+  }
+}
+
+.publications {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 720px;
+
+  li {
+    position: relative;
+    margin-bottom: 0.85rem;
+    line-height: 1.5;
+    padding: 0.85rem 1.05rem;
+    background-color: $grey-color-light;
+    border: 1px solid rgba(122, 162, 247, 0.15);
+    border-left: 3px solid $brand-color;
+    border-radius: 8px;
+    transition: border-color 0.15s ease, transform 0.15s ease;
+  }
+  li:last-child { margin-bottom: 0; }
+  li:hover { border-color: $brand-color; transform: translateY(-2px); }
+
+  .pub-meta {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.4rem;
+  }
+
+  .pub-year { @extend %chip; }
+
+  .pub-tag {
+    @extend %chip;
+    background-color: $brand-color;
+    color: $background-color;
+    border-color: $brand-color;
+  }
+
+  .pub-title {
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.4;
+    color: $text-color;
+    margin-bottom: 0.2rem;
+  }
+
+  a.pub-title {
+    width: fit-content;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(122, 162, 247, 0.4);
+  }
+  a.pub-title:hover { color: $brand-color; border-bottom-color: $brand-color; }
+  a.pub-title::after { content: ""; position: absolute; inset: 0; border-radius: 8px; }
+
+  .pub-authors {
+    display: block;
+    font-size: 0.95rem;
+    color: $text-color;
+    margin-bottom: 0.12rem;
+
+    strong { color: $brand-color; font-weight: 700; }
+  }
+
+  .pub-venue {
+    display: block;
+    font-size: 0.95rem;
+    font-style: italic;
+    color: $grey-color-dark;
+
+    a { color: inherit; border-bottom: 1px solid rgba(122, 162, 247, 0.4); text-decoration: none; }
     a:hover { color: $brand-color; border-bottom-color: $brand-color; }
   }
 }
