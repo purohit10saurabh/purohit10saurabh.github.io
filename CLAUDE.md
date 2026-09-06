@@ -6,18 +6,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Personal Jekyll site for Saurabh Purohit, deployed to GitHub Pages at `purohit10saurabh.github.io` (repo: `purohit10saurabh/purohit10saurabh.github.io`). Static content — homepage bio/highlights plus a blog fed by Jekyll posts.
 
-## Commands
+## Running locally
 
-Serve locally (requires the conda env `website`, which has Ruby 3.4 + Jekyll 4.4):
-
-```bash
-bash serve.sh          # serves index.html at localhost:4000, opens browser, livereload
-bash serve.sh <page>   # serves localhost:4000/<page>/ instead
-```
-
-`serve.sh` kills anything on port 4000 on exit. There is no separate build/lint/test command — Jekyll's own build step (`jekyll build`, or `serve`'s implicit build) is the only validation; watch its console output for Liquid/YAML errors when editing templates or post front matter.
-
-**Rule — viewing the site:** to preview or view the rendered site, run `bash serve.sh` (or `bash serve.sh <page>`). If you can't run it in your environment, ask the user to run it rather than leaving the change unverified.
+Do not verify the site by using `serve.sh` because conda is blocked in your sandbox. Instead, check http://localhost:4000/. If it is not running, ask the user to run it then check the site. If the user cannot run it, ask them to verify the change themselves.
 
 **Important:** don't add `github-pages` gem to the Gemfile — it conflicts with local `jekyll serve` under this setup. Plugins needed for the live GitHub Pages build are instead declared directly in `_config.yml` (`jekyll-feed`, `jekyll-seo-tag`, `jekyll-sitemap`).
 
