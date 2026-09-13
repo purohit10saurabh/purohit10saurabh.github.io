@@ -22,7 +22,7 @@ permalink: /
     </div>
     <a class="hero-latest" href="{{ '/hds/' | relative_url }}">
       <span class="hero-latest-label">Post</span>
-      <span class="hero-latest-title">A surprising phenomenon in high-dimensional spaces</span>
+      <span class="hero-latest-title">A high dimensional paradox!</span>
       <span class="hero-latest-arrow" aria-hidden="true">→</span>
     </a>
     <button class="hero-cta" type="button" onclick="document.getElementById('learn-more').scrollIntoView({behavior:'smooth'})">Learn more <span class="hero-cta-arrow">↓</span></button>
