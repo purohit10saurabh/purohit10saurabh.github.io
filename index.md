@@ -13,7 +13,7 @@ permalink: /
   <div class="hero-text">
     <h1>Saurabh Purohit</h1>
     <p class="hero-tagline">{{ site.tagline }}</p>
-    <p>Hi, I am a math graduate from <a href="{{ links.iit_kanpur }}">IIT Kanpur</a> with machine learning experience at Microsoft Research, Adobe etc. My work includes developing the lipsync model for <a href="{{ links.adobe_lipsync }}">Adobe's dubbing & lipsync system</a> (co-inventor on its patent), a <a href="{{ links.kdd_paper }}">research paper at KDD</a> by Microsoft Research, and <a href="{{ links.github_stack }}">fun open-source projects</a>. Apart from <a href="{{ '/hds/' | relative_url }}">math</a> and <a href="{{ '/research/' | relative_url }}">research</a>, I enjoy <a href="{{ '/travel/' | relative_url }}">travel</a>, fitness, and books.</p>
+    <p>Hi, I am a math graduate from <a href="{{ links.iit_kanpur }}">IIT Kanpur</a> with machine learning experience at Microsoft Research, Adobe etc. My works include developing the zero-shot lipsync model for <a href="{{ links.adobe_lipsync }}">Adobe's dubbing & lipsync system</a> (inventor on its patent), <a href="{{ links.kdd_paper }}">research paper in zero-shot extreme classification</a> published at KDD conference, and a <a href="{{ links.github_stack }}">few open-source projects</a>. Apart from <a href="{{ '/hds/' | relative_url }}">math</a> and <a href="{{ '/research/' | relative_url }}">research</a>, I enjoy <a href="{{ '/travel/' | relative_url }}">travel</a>, fitness, and books.</p>
     <div class="hero-links">  
       <a class="hero-link-primary" href="{{ '/blog/' | relative_url }}">Blog</a>
       <a href="{{ links.github }}">GitHub</a>
