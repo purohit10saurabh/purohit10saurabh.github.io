@@ -2,7 +2,6 @@
 layout: post
 title: "My thoughts"
 date: 2026-06-02
-category: life
 ---
 
 ## Depth over action

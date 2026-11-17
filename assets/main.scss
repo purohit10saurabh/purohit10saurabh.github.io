@@ -172,6 +172,16 @@ details {
     margin-bottom: 0.4rem;
   }
   p { margin: 0; font-size: 0.95rem; line-height: 1.5; color: $grey-color-dark; }
+  .post-figure { margin: 0.6rem 0 0; }
+  .post-image { display: block; max-width: 100%; height: auto; }
+  .post-image-caption {
+    margin-top: 0.45rem;
+    text-align: center;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    color: $grey-color-dark;
+    font-style: italic;
+  }
 }
 
 %chip {

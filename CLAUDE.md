@@ -17,7 +17,7 @@ Do not verify the site by using `serve.sh` because conda is blocked in your sand
 - `_config.yml` — site metadata (title/tagline/description/author), plugin list, permalink style (`/:title/`), theme (`minima`).
 - `index.md` — homepage; hand-written HTML sections (hero, work experience, highlights) rather than includes, using Liquid for site variables and `relative_url` filters.
 - `_data/links.yml` — central list of external link URLs, referenced from templates via `{{ site.data.links.<key> }}` so each URL lives in one place. When adding or changing an external link in `index.md` (or other templates), add/edit the key here rather than hard-coding the URL inline.
-- `_posts/*.md` — blog posts. Each needs `category: blog` or `category: life` front matter; `_includes/post-list-section.html` filters `site.posts` by this `category` field to render each section, so a post without a matching category won't show up anywhere. `blog.md` renders both category sections via this include.
+- `_posts/*.md` — blog posts.
 - `_includes/` — `header.html`, `footer.html`, `head.html` (SEO/meta, including Person JSON-LD structured data — see below), `post-list-section.html`.
 - `assets/` — images/SVGs plus `main.scss` (site styling, compiled by Jekyll's Sass processor with `quiet_deps: true`).
 - `wip/` and `todo.md` — personal drafts/notes, git-ignored (see `.gitignore`), not part of the built site.
